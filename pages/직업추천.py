@@ -6,7 +6,7 @@ st.set_page_config(page_title="직업 추천", page_icon="💼", layout="wide")
 if "result_type" not in st.session_state:
     st.session_state.result_type = None
 
-st.title("💼 MBTI 직업 추천")
+st.title("💼 MBTI별 직업 추천")
 st.write("유형별로 어울리는 직업과 산업 분야를 확인해보세요.")
 
 if st.session_state.result_type:
