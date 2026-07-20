@@ -1,4 +1,3 @@
-hobby_py = r'''
 import random
 import streamlit as st
 from data import MBTI_DATA, MBTI_EMOJI
@@ -96,7 +95,7 @@ if st.button("뽑기 기계 돌리기 🎲"):
     pick = random.choice(data["hobbies"])
     icon = get_hobby_icon(pick)
     gacha_placeholder.markdown(
-        f"<div style='font-size:90px; text-align:center;'>🎉🎰🎉</div>",
+        "<div style='font-size:90px; text-align:center;'>🎉🎰🎉</div>",
         unsafe_allow_html=True,
     )
     st.balloons()
@@ -115,11 +114,3 @@ for t in filtered:
         for hobby in MBTI_DATA[t]["hobbies"]:
             icon = get_hobby_icon(hobby)
             st.markdown(f"- {icon} {hobby}")
-'''
-
-with open("output/pages/3_취미추천.py", "w", encoding="utf-8") as f:
-    f.write(hobby_py)
-
-import py_compile
-py_compile.compile("output/pages/3_취미추천.py", doraise=True)
-print("OK, length:", len(hobby_py))
