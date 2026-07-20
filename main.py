@@ -6,7 +6,7 @@ st.set_page_config(page_title="MBTI 웹앱", page_icon="🧠", layout="wide")
 if "result_type" not in st.session_state:
     st.session_state.result_type = None
 
-st.title("🧪 MBTI 핵심 테스트 & 결과")
+st.title("🧪 MBTI 간이 테스트")
 st.write("12개의 문항에 답하고 나의 성격 유형을 확인해보세요.")
 
 if st.session_state.result_type:
