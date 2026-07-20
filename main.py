@@ -53,4 +53,4 @@ if submitted:
         st.write(f"T {scores['T']} : F {scores['F']}")
         st.write(f"J {scores['J']} : P {scores['P']}")
 
-    st.info("👈 왼쪽 메뉴에서 '관계 분석'과 '직업 추천' 페이지로 이동해 더 자세한 정보를 확인해보세요.
+  st.info("👈 왼쪽 메뉴에서 관계 분석과 직업 추천, 취미 추천 페이지로 이동해 더 자세한 정보를 확인해보세요.")
