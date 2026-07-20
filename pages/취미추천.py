@@ -47,7 +47,7 @@ def get_hobby_icon(hobby: str) -> str:
             return icon
     return "🎯"
 
-st.title("🎨 MBTI 취미 추천")
+st.title("🎨 MBTI별 취미 추천")
 st.write("유형별로 어울리는 취미와 여가 활동을 확인해보세요.")
 
 if st.session_state.result_type:
